@@ -1,29 +1,24 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
 struct mydata{
     string name;
-    int age;
+    int math;
+    int eng;
 };
-void func(mydata);
+
+float avg(int, int);
+
 int main()
 {
-    mydata woman={"Mary Wu", 5};
-    cout << "before process..." << endl;
-    cout << "In main(), " << woman.name << " ";
-    cout << "is" << " " << woman.age << " year's old" << endl;
-    cout << "after process..." << endl;
-    func(woman);
-    cout << "In main()," << woman.name << " ";
-    cout << "is" << " " << woman.age << " year's old" << endl;
+    mydata num = {"Alice", 71, 80};
+    cout << num.name << "'s math score= " << num.math;
+    cout << endl << "english's score= " << num.eng << endl;
+    cout << "average= " << avg(num.math, num.eng) << endl;
     return 0;
 }
 
-void func(mydata a)
+float avg(int a, int b)
 {
-    a.age += 10;
-    cout << "In func()," << a.name << " ";
-    cout << "is" << " " << a.age << " years old" << endl;
-    return;
+    return (float)(a+b)/2;
 }
