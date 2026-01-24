@@ -1,0 +1,10 @@
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# C++ build
+a.out
+*.o
+*.dSYM
