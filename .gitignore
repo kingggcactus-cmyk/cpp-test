@@ -8,3 +8,20 @@
 a.out
 *.o
 *.dSYM
+
+# Ignore everything in .vscode
+.vscode/*
+
+# But allow these files
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/c_cpp_properties.json
+
+# macOS
+.DS_Store
+
+# C++ build
+a.out
+*.o
+*.dSYM
